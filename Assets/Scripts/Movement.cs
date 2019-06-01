@@ -36,6 +36,6 @@ public class Movement : MonoBehaviour
 
         moveDirection.y -= gravity*Time.deltaTime;
 
-        _cController.Move((moveDirection += Camera.main.transform.position) * Time.deltaTime);
+        _cController.Move(moveDirection * Time.deltaTime);
     }
 }
